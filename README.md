@@ -19,16 +19,19 @@ You have fill up the form with Account Head Name and Account Head Type and then 
 Open the file (GoogleForms-master/server/path/form/formData.db) to see the responses of the client
 
 If you want to change or Update the form, go to the (GoogleForms-master/server/path/form/data.db)
-For example
-Now the file is
+
+For example, now the file is
 
 `{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
 `
+
 To add a new text use:
 
 `{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"Address","fieldplaceholder":"Your Address","fieldlabel":"Address","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
 `
+
 And save the file. Restart the server using (Ctrl+C & `node index.js`)
+
 Now after reloading you will see this updated form
 
 ![image](https://user-images.githubusercontent.com/75152633/112975495-5b0f6680-9171-11eb-81a9-3a70bae699a8.png)
