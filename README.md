@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Google Forms clone 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by Shakil Ahmed. I have created this project as an assignment on React Js and MongoDb.
 
-## Available Scripts
+## How to Install and run
+1. Download the Project in Zip format(GoogleForms-master)
+2. Extract the Zip file(GoogleForms-master) on your PC.
+3. Run `npm i` inside (GoogleForms-master)
+4. Run `npm start` to start the React server
+5. Start a new cmd inside the (GoogleForms-master/server) and run the `node index.js`
+6. Now open (http://localhost:3000/) inside your web browser
 
-In the project directory, you can run:
+You can see a form like this->
+![image](https://user-images.githubusercontent.com/75152633/112973835-5cd82a80-916f-11eb-9817-c06e09e1ec75.png)
 
-### `npm start`
+You have fill up the form with Account Head Name and Account Head Type and then Submit->
+![image](https://user-images.githubusercontent.com/75152633/112974191-cfe1a100-916f-11eb-828c-cad89ce60caf.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open the file (GoogleForms-master/server/path/form/formData.db) to see the responses of the client
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you want to change or Update the form, go to the (GoogleForms-master/server/path/form/data.db)
+For example
+Now the file is
+`{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
+`
+To add a new text use:
+`{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"Address","fieldplaceholder":"Your Address","fieldlabel":"Address","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
+`
+And save the file. Restart the server using (Ctrl+C & `node index.js`)
+Now after reloading you will see this updated form
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/75152633/112975495-5b0f6680-9171-11eb-81a9-3a70bae699a8.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
