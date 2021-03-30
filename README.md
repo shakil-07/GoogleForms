@@ -21,9 +21,11 @@ Open the file (GoogleForms-master/server/path/form/formData.db) to see the respo
 If you want to change or Update the form, go to the (GoogleForms-master/server/path/form/data.db)
 For example
 Now the file is
+
 `{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
 `
 To add a new text use:
+
 `{"formName":"Test Form","formDesc":"this is a test form, only to test","data":[{"fieldname":"AccountHeadName","fieldplaceholder":"Account Head Name","fieldlabel":"Account Head Name","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"Address","fieldplaceholder":"Your Address","fieldlabel":"Address","fieldrules":[{"required":true,"message":"This field is required"}],"fieldtype":"text"},{"fieldname":"AccountType","fieldplaceholder":"Account Type","fieldlabel":"Account Type","fieldrules":[],"fieldtype":"select","options":["Assets","Liabilities"]}],"_id":"LtMFs2EXXos2nSh5"}
 `
 And save the file. Restart the server using (Ctrl+C & `node index.js`)
