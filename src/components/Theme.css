@@ -1,0 +1,151 @@
+.txtLabel {
+    text-align: left;
+    font-size: 14pt;
+    margin-top: 20px;
+}
+
+.txt {
+	display: block;
+    width: 100%;
+    margin: 15px 0 2px 0;
+    font-size: 12pt;
+    padding: 5px 0;
+    background-color: #282c34;
+    color: white;
+}
+.txt:focus {
+	outline: none;
+}
+
+.txt:invalid {
+    border: 1px solid red;
+    border-width: 0 0 2px 0;
+}
+
+.txt:required {
+    border: 1px solid red;
+    border-width: 0 0 2px 0;
+}
+.txt:invalid + label::after {
+    content: attr(text);
+}
+.txt:valid + label::after {
+    content: "";
+}
+
+.txt:valid {
+    border: 1px solid #14d514;
+    border-width: 0 0 2px 0;
+}
+
+.txt:disabled {
+    border: 1px solid #14d514;
+    border-width: 0 0 2px 0;
+}
+
+.txt-nocheck {
+	display: block;
+    width: 100%;
+    margin: 20px 0 2px 0;
+    font-size: 12pt;
+    padding: 5px;
+    border: solid #7878c1 1px;
+    border-width: 0 0 2px 0;
+}
+
+.txt-nocheck:focus {
+	outline: none;
+}
+
+.txtError {
+	color: red;
+    height: 17px;
+    width: 100%;
+    display: inline-block;
+    font-size: 10pt;
+    font-family: system-ui;
+    text-align: left;
+}
+
+
+.select-edit {
+	position: relative;
+    background-color: #282c34;
+    border: solid #7878c1 1px;
+    margin: 20px 0;
+    border-width: 0 0 2px 0;
+}
+.select-edit .select-edit-select {
+	position: absolute;
+    top: 13px;
+    left: 80px;
+    bottom: 10px;
+    font-size: 14px;
+    border: none;
+    right: 0;
+    margin: 0;
+}
+.select-edit .select-edit-input {
+	position: absolute;
+    top: 13px;
+    left: 80px;
+    right: 20px;
+    bottom: 10px;
+    padding: 1px;
+    font-size: 12px;
+    border: none;
+}
+.select-edit select {top:0px; left:0; font-size:14px; border:none; width: 100%; margin:0; background-color: #282c34; color: white;}
+.select-edit input {position:absolute; top:0px; left:0; width:100%; padding:1px; font-size:12px; border:none;}
+.select-edit select:focus, .select-edit input:focus {outline:none;}
+
+.but-cont {
+	text-align: center;
+}
+
+.but {
+	padding: 5px 10px;
+    margin: 10px 10px 0 10px;
+	font: normal 15px/normal Arial Black, Gadget, sans-serif;
+	color: rgba(255,255,255,0.9);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: linear-gradient(180deg, rgba(74,134,232,1) 0, rgba(74,134,232,1) 63%, rgba(47,94,170,1) 100%);
+	background-position: 50% 50%;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-size: auto auto;
+	opacity: 1;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+	text-shadow: -1px -1px 0 rgba(15,73,168,0.66);
+	border: 1px solid #018dc4;
+	border-radius: 3px;
+}
+
+.but:active {
+	background: linear-gradient(0deg, rgba(74,134,232,1) 0, rgba(74,134,232,1) 63%, rgba(47,94,170,1) 100%);
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+}
+
+.but:focus {
+	outline: none;
+}
+
+.butlink {
+	background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.butlink:focus {
+	outline: none;
+}
+
+.cont-data {
+	margin: 50px 0;
+    font-size: 9px;
+    font-family: system-ui;
+}
